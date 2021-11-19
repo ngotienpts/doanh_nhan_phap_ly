@@ -1,0 +1,1686 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tạp chí điện tử Doanh nhân và Pháp lý</title>
+    <link rel="icon" href="./images/logo1.png" sizes="32x32">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css">
+    <!-- CSS only -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="css/reset.css"> -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <!-- <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script> -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+     <!-- QC-pc-header -->
+    <div class="d-sm-block d-none qc-header-mobile">
+        <img src="./images/qc-headerpc.png" alt="">
+    </div>
+    <!-- end QC-pc-header -->
+    <!-- QC-mobile-header -->
+    <div class="d-block d-sm-none qc-header-mobile">
+        <img src="./images/Ad.png" alt="">
+    </div>
+    <!-- end QC-mobile-header -->
+    <!-- header -->
+    <article>
+        <!-- du bao thoi tiet -->
+        <div class="container-fluid full-screen">
+            <div class="w-1080 time-weather">
+                <div class="logo-home d-lg-block d-none">
+                    <a href="#"><img src="./images/logo.png" alt=""></a>
+                </div>
+                <div class="icon-mxh">
+                    <div class="time-weather__time">
+                        <strong>Thứ Hai,</strong>&nbsp; 5/4/2021 <span class="pl-2 d-lg-block d-none">10:25 AM (GTM +7)</span>
+                    </div>
+                    <div class="time-weather__time pt-2">
+                        <span class="d-lg-block d-none">
+                            Hotline: <strong>0904.164.838</strong> - Liên hệ quảng cáo: <strong>024.3728.1575 ( Ms Tú) </strong>- Phòng Phóng viên <strong>024.3204.5452</strong>
+                        </span>
+                    </div>
+                    <div class="time-weather__weather">
+                        <div class="icon-share">
+                            <a href="#"><i class="fab fa-facebook-f fa-fw"></i></a>
+                            <a href="#" class="d-lg-block d-none"><i class="fab fa-google-plus-g fa-fw"></i></a>
+                            <a href="#" class="d-lg-block d-none"><i class="fab fa-twitter fa-fw"></i></a>
+                            <a href="#"><i class="fab fa-youtube fa-fw"></i></a>
+                        </div>
+                        <div class="change-weather d-lg-block d-none">
+                            <span class="city pr-2">
+    							<!-- <select class="change-city pr-2">
+    								<option value="">Hà nội</option>
+    								<option value="">Thành phố Hồ Chí Minh</option>
+    								<option value="">Đà Nẵng</option>
+    								<option value="">Hải Phòng</option>
+    								<option value="">Quảng Ninh</option>
+    							</select> -->
+    							<strong>Hà nội</strong>
+    						</span>
+                            <strong>25*C</strong>/<strong>61%</strong>
+                            <img src="./images/weather.png" alt="" style="width: 20px; filter: contrast(0.5); margin-left: 5px; margin-bottom: 3px;">
+                        </div>
+                        <div class="icon-share">
+                            <a href="#"><i class="fas fa-user fa-fw"></i></a>
+                        </div>
+                        <div class="d-lg-block d-none">
+                            <div id="sb-search" class="sb-search">
+                                <form action="" method="">
+                                    <input type="hidden" name="mod" value="news">
+                                    <input type="hidden" name="act" value="search">
+                                    <input class="sb-search-input " onkeyup="buttonUp();" placeholder="Tìm kiếm..." onblur="monkey();" type="search" value="" name="search" id="search">
+                                    <input class="sb-search-submit" type="submit" value="">
+                                    <span class="sb-icon-search"><i class="fa fa-search"></i></span>
+                                </form>
+                            </div>
+                        </div>
+                        <!-- end search -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end du bao thoi tiet -->
+    </article>
+    <div class="line1 d-lg-block d-none"></div>
+    <!-- menu -->
+    <div class="container-fluid full-screen bg-white menu-sticky">
+        <!-- menu pc -->
+        <div class="w-1080 menu-pc d-lg-block d-none padding-15 position-relative">
+            <ul class="menu-pc__ul">
+                <li class="nav_item active">
+                    <a href="#"><img src="./images/Home.svg" alt=""></a>
+                </li>
+                <li class="nav_item dropdown">
+                    <a href="#">Tin tức</a>
+                    <ul class="dropdown-list">
+                        <li class="dropdown_item"><a href="#">tin tức</a></li>
+                        <li class="dropdown_item"><a href="#">tin tức</a></li>
+                        <li class="dropdown_item"><a href="#">tin tức</a></li>
+                        <li class="dropdown_item"><a href="#">tin tức</a></li>
+                    </ul>
+                </li>
+                <li class="nav_item dropdown">
+                    <a href="#">Đầu tư</a>
+                </li>
+                <li class="nav_item dropdown">
+                    <a href="#">Doanh nghiệp</a>
+                </li>
+                <li class="nav_item dropdown">
+                    <a href="#">Bất động sản</a>
+                </li>
+                <li class="nav_item dropdown">
+                    <a href="#">Thị trường</a>
+                </li>
+                <li class="nav_item dropdown">
+                    <a href="#">Tài chính Ngân hàng</a>
+                </li>
+                <li class="nav_item dropdown">
+                    <a href="#">Môi trường</a>
+                </li>
+                <li class="nav_item dropdown">
+                    <a href="#">Quốc tế</a>
+                </li>
+                <li class="nav_item dropdown">
+                    <a href="#">Văn hóa doanh nhân</a>
+                </li>
+                <li class="nav_item dropdown">
+                    <a href="#">Doah nhân và pháp luật</a>
+                </li>
+            </ul>
+        </div>
+        <!-- end menu pc -->
+        <!-- menu mobile -->
+        <div class="padding-15 d-lg-none d-block bg-begi">
+            <ul class="menu-mobile">
+                <li class="nav-item__mb"><i class="fas fa-bars"></i></li>
+                <li class="logo-home__mb">
+                    <a href="#"><img src="./images/logo.png" alt=""></a>
+                </li>
+                <li class="nav-search__mb"><i class="fas fa-search"></i></li>
+            </ul>
+        </div>
+    </div>
+    <!-- slide menu mobile -->
+    <div class="slide-menu-mb padding-15 pt-2">
+        <div class="icon-menu__close"><i class="far fa-times-circle"></i></div>
+        <ul class="slide-menu__list">
+            <li class="slide-menu__search">
+                <form class="" action="" method="">
+                    <div class="input-group dropdown-item bg-white pb-3">
+                        <input type="hidden" name="mod" value="archive">
+                        <input type="hidden" name="act" value="search">
+                        <input type="text" name="search" class="form-control shadow-none" placeholder="Tìm kiếm..." aria-label="Recipient's username" aria-describedby="basic-addon2">
+                        <div class="input-group-append">
+                            <button class="btn btn-outline-secondary" type="submit"><i class="fas fa-search"></i></button>
+                        </div>
+                    </div>
+                </form>
+            </li>
+            <li class="slide-menuu__item"><a href="#">Tin tuc</a></li>
+            <li><a href="#">Tin tuc</a></li>
+            <li><a href="#">Tin tuc</a></li>
+            <li><a href="#">Tin tuc</a></li>
+            <li><a href="#">Tin tuc</a></li>
+        </ul>
+    </div>
+    <!-- end silde menu mobile -->
+    <!-- end menu -->
+    <!-- end header -->
+    <!-- main -->
+    <article>
+        <div class="main-container-qc">
+            <div class="w-1140 main-content1">
+                <!-- box1 -->
+                <div class="main-box1">
+                    <div class="main-box-left">
+                        <div class="d-flex">
+                            <div class="article-news-box1 col-lg-8 col-12 pl-lg-0 pr-lg-3 px-sm-0">
+                                <div class="px-0 col-12">
+                                    <div class="">
+                                        <div class="thumb-img">
+                                            <a href="#"><img class="" src="./images/2.png" width="540" height="288" alt="Vì sao túi nilon trắng bên trong có nước lại đuổi được ruồi?"></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="fs-24 pt-sm-2 px-sm-0 px-2 title-text-box1">
+                                    <a href="#" class="f-600">
+    	                                Nhiều đài truyền hình Hàn Quốc tới Nội Bài đón nhà vô địch SEA Games
+    	                            </a>
+                                </div>
+                                <div class="h1-ari fs-13 pt-2 pb-2 d-lg-block d-none">
+                                    <a href="#" class="f-600 text-gray">Thời sự</a>
+                                    <span>&nbsp;-&nbsp;</span>
+                                    <span class="text-gray">7h</span>
+                                </div>
+                                <div class="h1-ari fs-15 pt-sm-2 px-sm-0 px-2 des-text-box1">
+                                    <a href="#" class="fix-text3 f-400">
+    	                                Chiều 11/12, công tác chuẩn bị đã hoàn tất nhiều giờ trước khi đoàn bóng đá Việt Nam giành HCV SEA Games 30 về tới sân bay Nội Bài (Hà Nội).
+    	                                Chiều 11/12, công tác chuẩn bị đã hoàn tất nhiều giờ trước khi đoàn bóng đá Việt Nam giành HCV SEA Games 30 về tới sân bay Nội Bài (Hà Nội).
+    	                            </a>
+                                </div>
+                                <div class="h1-ari fs-14 pt-2 pb-2 d-sm-none d-block bg-begi px-2">
+                                    <a href="#" class="f-600 text-gray">Thời sự</a>
+                                    <span>&nbsp;-&nbsp;</span>
+                                    <span class="text-gray">7h</span>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 d-lg-block d-none px-lg-0">
+                                <div class="content-right-box1">
+                                    <div class="icone-right-box1">&#8226;</div>
+                                    <div class="text-right-box1"><a href="#">Cải hoán tàu cá ở Quảng Bình: Ngư dân băn khoăn, lo lắng</a></div>
+                                </div>
+                                <div class="content-right-box1">
+                                    <div class="icone-right-box1">&#8226;</div>
+                                    <div class="text-right-box1"><a href="#">Cải hoán tàu cá ở Quảng Bình: Ngư dân băn khoăn, lo lắng</a></div>
+                                </div>
+                                <div class="content-right-box1">
+                                    <div class="icone-right-box1">&#8226;</div>
+                                    <div class="text-right-box1"><a href="#">Cải hoán tàu cá ở Quảng Bình: Ngư dân băn khoăn, lo lắng</a></div>
+                                </div>
+                                <div class="content-right-box1">
+                                    <div class="icone-right-box1">&#8226;</div>
+                                    <div class="text-right-box1"><a href="#">Cải hoán tàu cá ở Quảng Bình: Ngư dân băn khoăn, lo lắng</a></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pt-lg-3 main-box1-bottom">
+                            <div class="col-lg-4 col-12 bottom-box1 pl-lg-0 px-0">
+                                <!-- cot1 -->
+                                <div class="pr-lg-3 pb-lg-0 pb-3 col-lg-12 col-6 pl-0">
+                                    <div class="">
+                                        <div class="thumb-img">
+                                            <a href="#"><img class="" src="./images/2.png" width="240" height="150" alt="Vì sao túi nilon trắng bên trong có nước lại đuổi được ruồi?"></a>
+                                        </div>
+                                    </div>
+                                    <div class="h1-robo fs-16 pt-lg-2 pt-3 px-sm-0 px-0 title-text-box2">
+                                        <a href="#" class="f-600">
+                                            VN-Index kiểm chứng mốc 970 điểm phiên cuối tuần
+                                        </a>
+                                    </div>
+                                    <div class="h1-ari fs-13 pt-2 pb-2">
+                                        <a href="#" class="f-600 text-gray">Thời sự</a>
+                                        <span>&nbsp;-&nbsp;</span>
+                                        <span class="text-gray">7h</span>
+                                    </div>
+                                </div>
+                                <!-- end cot1 -->
+                               <!-- cot1 -->
+                                <div class="pr-lg-3 pb-lg-0 pb-3 col-lg-12 col-6 pl-0">
+                                    <div class="">
+                                        <div class="thumb-img">
+                                            <a href="#"><img class="" src="./images/2.png" width="240" height="150" alt="Vì sao túi nilon trắng bên trong có nước lại đuổi được ruồi?"></a>
+                                        </div>
+                                    </div>
+                                    <div class="h1-robo fs-16 pt-lg-2 pt-3 px-sm-0 px-0 title-text-box2">
+                                        <a href="#" class="f-600">
+                                            VN-Index kiểm chứng mốc 970 điểm phiên cuối tuần
+                                        </a>
+                                    </div>
+                                    <div class="h1-ari fs-13 pt-2 pb-2">
+                                        <a href="#" class="f-600 text-gray">Thời sự</a>
+                                        <span>&nbsp;-&nbsp;</span>
+                                        <span class="text-gray">7h</span>
+                                    </div>
+                                </div>
+                                <!-- end cot1 -->
+                                <!-- cot1 -->
+                                <div class="pr-lg-3 pb-lg-0 pb-3 col-lg-12 col-6 pl-0">
+                                    <div class="">
+                                        <div class="thumb-img">
+                                            <a href="#"><img class="" src="./images/2.png" width="240" height="150" alt="Vì sao túi nilon trắng bên trong có nước lại đuổi được ruồi?"></a>
+                                        </div>
+                                    </div>
+                                    <div class="h1-robo fs-16 pt-lg-2 pt-3 px-sm-0 px-0 title-text-box2">
+                                        <a href="#" class="f-600">
+                                            VN-Index kiểm chứng mốc 970 điểm phiên cuối tuần
+                                        </a>
+                                    </div>
+                                    <div class="h1-ari fs-13 pt-2 pb-2">
+                                        <a href="#" class="f-600 text-gray">Thời sự</a>
+                                        <span>&nbsp;-&nbsp;</span>
+                                        <span class="text-gray">7h</span>
+                                    </div>
+                                </div>
+                                <!-- end cot1 -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="main-box1-right">
+                       <div class="qc-home-right">
+                            <a href="#">
+                                <img src="./images/qc1.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- end box1 -->
+            </div>
+        </div>
+        <!-- box2 -->
+        <div class="w-1140 main-news">
+            <div class="main-news__text">
+                <div class="main-news__title">tin mới</div>
+                <div class="mai-news__line"></div>
+            </div>
+            <div class="video-thumb">
+                    <!-- news thumb1 -->
+                    <div class="news-thumb__1">
+                        <!-- image -->
+                        <div class="news-thumb__2">
+                            <div class="thumb-img">
+                                <a href="#"><img class="" src="./images/2.png" width="200" height="120" alt="Vì sao túi nilon trắng bên trong có nước lại đuổi được ruồi?"></a>
+                            </div>
+                        </div>
+                        <!-- end image -->
+                        <!-- text -->
+                        <div>
+                            <div class="fs-16 pt-sm-2 pr-sm-3 des-text-box2">
+                                <a href="#" class="fix-text3 f-600">
+                                    Bóng chuyền nữ Việt Nam và nỗi lo SEA Games 30
+                                </a>
+                            </div>
+                            <div class="h1-ari fs-13 pt-2 pb-2">
+                                <a href="#" class="f-600 text-gray">Thời sự</a>
+                                <span>&nbsp;-&nbsp;</span>
+                                <span class="text-gray">7h</span>
+                            </div>
+                        </div>
+                        <!-- end text -->
+                    </div>
+                    <!-- end news thumb1 -->
+                    <!-- news thumb1 -->
+                    <div class="news-thumb__1">
+                        <!-- image -->
+                        <div class="news-thumb__2">
+                            <div class="thumb-img">
+                                <a href="#"><img class="" src="./images/2.png" width="200" height="120" alt="Vì sao túi nilon trắng bên trong có nước lại đuổi được ruồi?"></a>
+                            </div>
+                        </div>
+                        <!-- end image -->
+                        <!-- text -->
+                        <div>
+                            <div class="fs-16 pt-sm-2 pr-sm-3 des-text-box2">
+                                <a href="#" class="fix-text3 f-600">
+                                    Bóng chuyền nữ Việt Nam và nỗi lo SEA Games 30
+                                </a>
+                            </div>
+                            <div class="h1-ari fs-13 pt-2 pb-2">
+                                <a href="#" class="f-600 text-gray">Thời sự</a>
+                                <span>&nbsp;-&nbsp;</span>
+                                <span class="text-gray">7h</span>
+                            </div>
+                        </div>
+                        <!-- end text -->
+                    </div>
+                    <!-- end news thumb1 -->
+                    <!-- news thumb1 -->
+                    <div class="news-thumb__1">
+                        <!-- image -->
+                        <div class="news-thumb__2">
+                            <div class="thumb-img">
+                                <a href="#"><img class="" src="./images/2.png" width="200" height="120" alt="Vì sao túi nilon trắng bên trong có nước lại đuổi được ruồi?"></a>
+                            </div>
+                        </div>
+                        <!-- end image -->
+                        <!-- text -->
+                        <div>
+                            <div class="fs-16 pt-sm-2 pr-sm-3 des-text-box2">
+                                <a href="#" class="fix-text3 f-600">
+                                    Bóng chuyền nữ Việt Nam và nỗi lo SEA Games 30
+                                </a>
+                            </div>
+                            <div class="h1-ari fs-13 pt-2 pb-2">
+                                <a href="#" class="f-600 text-gray">Thời sự</a>
+                                <span>&nbsp;-&nbsp;</span>
+                                <span class="text-gray">7h</span>
+                            </div>
+                        </div>
+                        <!-- end text -->
+                    </div>
+                    <!-- end news thumb1 -->
+                    <!-- news thumb1 -->
+                    <div class="news-thumb__1">
+                        <!-- image -->
+                        <div class="news-thumb__2">
+                            <div class="thumb-img">
+                                <a href="#"><img class="" src="./images/2.png" width="200" height="120" alt="Vì sao túi nilon trắng bên trong có nước lại đuổi được ruồi?"></a>
+                            </div>
+                        </div>
+                        <!-- end image -->
+                        <!-- text -->
+                        <div>
+                            <div class="fs-16 pt-sm-2 pr-sm-3 des-text-box2">
+                                <a href="#" class="fix-text3 f-600">
+                                    Bóng chuyền nữ Việt Nam và nỗi lo SEA Games 30
+                                </a>
+                            </div>
+                            <div class="h1-ari fs-13 pt-2 pb-2">
+                                <a href="#" class="f-600 text-gray">Thời sự</a>
+                                <span>&nbsp;-&nbsp;</span>
+                                <span class="text-gray">7h</span>
+                            </div>
+                        </div>
+                        <!-- end text -->
+                    </div>
+                    <!-- end news thumb1 -->
+                    <!-- news thumb1 -->
+                    <div class="news-thumb__1">
+                        <!-- image -->
+                        <div class="news-thumb__2">
+                            <div class="thumb-img">
+                                <a href="#"><img class="" src="./images/2.png" width="200" height="120" alt="Vì sao túi nilon trắng bên trong có nước lại đuổi được ruồi?"></a>
+                            </div>
+                        </div>
+                        <!-- end image -->
+                        <!-- text -->
+                        <div>
+                            <div class="fs-16 pt-sm-2 pr-sm-3 des-text-box2">
+                                <a href="#" class="fix-text3 f-600">
+                                    Bóng chuyền nữ Việt Nam và nỗi lo SEA Games 30
+                                </a>
+                            </div>
+                            <div class="h1-ari fs-13 pt-2 pb-2">
+                                <a href="#" class="f-600 text-gray">Thời sự</a>
+                                <span>&nbsp;-&nbsp;</span>
+                                <span class="text-gray">7h</span>
+                            </div>
+                        </div>
+                        <!-- end text -->
+                    </div>
+                    <!-- end news thumb1 -->
+                </div>
+        </div>
+        <!-- end box2 -->
+        <!-- box3 -->
+        <div class="w-1140 main-content1 main-content-box3">
+                <!-- box1 -->
+                <div class="main-box1">
+                    <div class="main-box-left">
+                        <!-- hang1 -->
+                        <div class="article-news-item">
+                            <div class="col-sm-5 px-0 col-5">
+                                <div class="">
+                                    <div class="thumb-img">
+                                        <a href="#"><img class="" src="./images/2.png" width="330" height="180" alt="Vì sao túi nilon trắng bên trong có nước lại đuổi được ruồi?"></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-7 pr-0 col-7 pt-sm-0">
+                                <div class="fs-20 title-text-box3">
+                                    <a href="#" class="fix-text3 f-600">
+                                        Chất vấn Giám đốc Công an và Sở Tài nguyên - Môi trường TP HCM
+                                    </a>
+                                </div>
+                                <div class="h1-ari fs-13 pt-2">
+                                    <a href="#" class="f-600 text-gray">Thời sự</a>
+                                    <span>&nbsp;-&nbsp;</span>
+                                    <span class="text-gray">7h</span>
+                                </div>
+                                <div class="h1-ari fs-14 pt-lg-0 pt-1 d-lg-block d-none">
+                                    <a href="#" class="fix-text3 f-400">
+                                        Đại biểu HĐND TP HCM sẽ chất vấn lãnh đạo Công an, Sở Tài nguyên - Môi trường về an ninh trật tự và môi trường, đất đai, ngày 9/12.
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end hang1 -->
+                        <!-- hang1 -->
+                        <div class="article-news-item">
+                            <div class="col-sm-5 px-0 col-5">
+                                <div class="">
+                                    <div class="thumb-img">
+                                        <a href="#"><img class="" src="./images/2.png" width="330" height="180" alt="Vì sao túi nilon trắng bên trong có nước lại đuổi được ruồi?"></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-7 pr-0 col-7 pt-sm-0">
+                                <div class="fs-20 title-text-box3">
+                                    <a href="#" class="fix-text3 f-600">
+                                        Chất vấn Giám đốc Công an và Sở Tài nguyên - Môi trường TP HCM
+                                    </a>
+                                </div>
+                                <div class="h1-ari fs-13 pt-2">
+                                    <a href="#" class="f-600 text-gray">Thời sự</a>
+                                    <span>&nbsp;-&nbsp;</span>
+                                    <span class="text-gray">7h</span>
+                                </div>
+                                <div class="h1-ari fs-14 pt-lg-0 pt-1 d-lg-block d-none">
+                                    <a href="#" class="fix-text3 f-400">
+                                        Đại biểu HĐND TP HCM sẽ chất vấn lãnh đạo Công an, Sở Tài nguyên - Môi trường về an ninh trật tự và môi trường, đất đai, ngày 9/12.
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end hang1 -->
+                        <!-- hang1 -->
+                        <div class="article-news-item">
+                            <div class="col-sm-5 px-0 col-5">
+                                <div class="">
+                                    <div class="thumb-img">
+                                        <a href="#"><img class="" src="./images/2.png" width="330" height="180" alt="Vì sao túi nilon trắng bên trong có nước lại đuổi được ruồi?"></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-7 pr-0 col-7 pt-sm-0">
+                                <div class="fs-20 title-text-box3">
+                                    <a href="#" class="fix-text3 f-600">
+                                        Chất vấn Giám đốc Công an và Sở Tài nguyên - Môi trường TP HCM
+                                    </a>
+                                </div>
+                                <div class="h1-ari fs-13 pt-2">
+                                    <a href="#" class="f-600 text-gray">Thời sự</a>
+                                    <span>&nbsp;-&nbsp;</span>
+                                    <span class="text-gray">7h</span>
+                                </div>
+                                <div class="h1-ari fs-14 pt-lg-0 pt-1 d-lg-block d-none">
+                                    <a href="#" class="fix-text3 f-400">
+                                        Đại biểu HĐND TP HCM sẽ chất vấn lãnh đạo Công an, Sở Tài nguyên - Môi trường về an ninh trật tự và môi trường, đất đai, ngày 9/12.
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end hang1 -->
+                        <!-- hang1 -->
+                        <div class="article-news-item">
+                            <div class="col-sm-5 px-0 col-5">
+                                <div class="">
+                                    <div class="thumb-img">
+                                        <a href="#"><img class="" src="./images/2.png" width="330" height="180" alt="Vì sao túi nilon trắng bên trong có nước lại đuổi được ruồi?"></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-7 pr-0 col-7 pt-sm-0">
+                                <div class="fs-20 title-text-box3">
+                                    <a href="#" class="fix-text3 f-600">
+                                        Chất vấn Giám đốc Công an và Sở Tài nguyên - Môi trường TP HCM
+                                    </a>
+                                </div>
+                                <div class="h1-ari fs-13 pt-2">
+                                    <a href="#" class="f-600 text-gray">Thời sự</a>
+                                    <span>&nbsp;-&nbsp;</span>
+                                    <span class="text-gray">7h</span>
+                                </div>
+                                <div class="h1-ari fs-14 pt-lg-0 pt-1 d-lg-block d-none">
+                                    <a href="#" class="fix-text3 f-400">
+                                        Đại biểu HĐND TP HCM sẽ chất vấn lãnh đạo Công an, Sở Tài nguyên - Môi trường về an ninh trật tự và môi trường, đất đai, ngày 9/12.
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end hang1 -->
+                    </div>
+                    <div class="main-box1-right">
+                        <div class="qc-home-right">
+                            <a href="#">
+                                <img src="./images/qc2.png" alt="">
+                            </a>
+                        </div>
+                        <div class="qc-home-right">
+                            <a href="#">
+                                <img src="./images/qc3.png" alt="">
+                            </a>
+                        </div>
+                        <div class="main-box4-right">
+                            <div class="article-news-box4">
+                                <div class="news-box4-img">
+                                    <div class="">
+                                        <div class="thumb-img">
+                                            <a href="#"><img class="" src="./images/2.png" width="300" height="180" alt="Vì sao túi nilon trắng bên trong có nước lại đuổi được ruồi?"></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="fs-18 pt-sm-2 px-sm-0 pl-3 pr-0 title-text-box3">
+                                        <a href="#" class="f-600">
+                                            Nhiều đài truyền hình Hàn Quốc tới Nội Bài đón nhà vô địch SEA Games
+                                        </a>
+                                    </div>
+                                    <div class="h1-ari fs-13 pt-2 pb-lg-2 pl-lg-0 pl-3">
+                                        <a href="#" class="f-600 text-gray">Thời sự</a>
+                                        <span>&nbsp;-&nbsp;</span>
+                                        <span class="text-gray">7h</span>
+                                    </div>
+                                    <div class="h1-ari fs-14 px-sm-0 px-2 des-text-box1 d-lg-block d-none">
+                                        <a href="#" class="fix-text3 f-400">
+                                            Chiều 11/12, công tác chuẩn bị đã hoàn tất nhiều giờ trước khi đoàn bóng đá Việt Nam giành HCV SEA Games 30 về tới sân bay Nội Bài (Hà Nội).
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- hang1 -->
+                            <div class="article-news-item">
+                                <div class="col-sm-5 px-0 col-5">
+                                    <div class="">
+                                        <div class="thumb-img bo-6">
+                                            <a href="#"><img class="" src="./images/2.png" width="120" height="72" alt="Vì sao túi nilon trắng bên trong có nước lại đuổi được ruồi?"></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-7 pr-sm-0 px-2 col-7">
+                                    <div class="fs-14 title-text-box3">
+                                        <a href="#" class="fix-text3 f-600">
+                                            Vì sao túi nilon trắng bên trong có nước lại đuổi được ruồi?
+                                        </a>
+                                    </div>
+                                    <div class="h1-ari fs-13 pt-2">
+                                        <a href="#" class="f-600 text-gray">Thời sự</a>
+                                        <span>&nbsp;-&nbsp;</span>
+                                        <span class="text-gray">7h</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- end hang1 -->
+                            <!-- hang1 -->
+                            <div class="article-news-item">
+                                <div class="col-sm-5 px-0 col-5">
+                                    <div class="">
+                                        <div class="thumb-img bo-6">
+                                            <a href="#"><img class="" src="./images/2.png" width="120" height="72" alt="Vì sao túi nilon trắng bên trong có nước lại đuổi được ruồi?"></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-7 pr-sm-0 px-2 col-7">
+                                    <div class="fs-14 title-text-box3">
+                                        <a href="#" class="fix-text3 f-600">
+                                            Vì sao túi nilon trắng bên trong có nước lại đuổi được ruồi?
+                                        </a>
+                                    </div>
+                                    <div class="h1-ari fs-13 pt-2">
+                                        <a href="#" class="f-600 text-gray">Thời sự</a>
+                                        <span>&nbsp;-&nbsp;</span>
+                                        <span class="text-gray">7h</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- end hang1 -->
+                            <!-- hang1 -->
+                            <div class="article-news-item">
+                                <div class="col-sm-5 px-0 col-5">
+                                    <div class="">
+                                        <div class="thumb-img bo-6">
+                                            <a href="#"><img class="" src="./images/2.png" width="120" height="72" alt="Vì sao túi nilon trắng bên trong có nước lại đuổi được ruồi?"></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-7 pr-sm-0 px-2 col-7">
+                                    <div class="fs-14 title-text-box3">
+                                        <a href="#" class="fix-text3 f-600">
+                                            Vì sao túi nilon trắng bên trong có nước lại đuổi được ruồi?
+                                        </a>
+                                    </div>
+                                    <div class="h1-ari fs-13 pt-2">
+                                        <a href="#" class="f-600 text-gray">Thời sự</a>
+                                        <span>&nbsp;-&nbsp;</span>
+                                        <span class="text-gray">7h</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- end hang1 -->
+                            <!-- hang1 -->
+                            <div class="article-news-item">
+                                <div class="col-sm-5 px-0 col-5">
+                                    <div class="">
+                                        <div class="thumb-img bo-6">
+                                            <a href="#"><img class="" src="./images/2.png" width="120" height="72" alt="Vì sao túi nilon trắng bên trong có nước lại đuổi được ruồi?"></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-7 pr-sm-0 px-2 col-7">
+                                    <div class="fs-14 title-text-box3">
+                                        <a href="#" class="fix-text3 f-600">
+                                            Vì sao túi nilon trắng bên trong có nước lại đuổi được ruồi?
+                                        </a>
+                                    </div>
+                                    <div class="h1-ari fs-13 pt-2">
+                                        <a href="#" class="f-600 text-gray">Thời sự</a>
+                                        <span>&nbsp;-&nbsp;</span>
+                                        <span class="text-gray">7h</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- end hang1 -->
+                        </div>
+                       <div class="qc-home-right">
+                            <a href="#">
+                                <img src="./images/qc1.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- end box1 -->
+            </div>
+        <!-- end box3 -->
+        <!-- box4 -->
+        <div class="box-video-home">
+            <div class="w-1140 box-video-container">
+                <!-- title -->
+                <div class="title-box-list text-white gap-t">
+                    <a href="#" class="title-box__multi">Multimedia</a>
+                    <div class="title-box-scroll">
+                        <a href="#" class="title-box__item">Video</a>
+                        <a href="#" class="title-box__item">Ảnh</a>
+                        <a href="#" class="title-box__item">Magazine</a>
+                    </div>
+                </div>
+                <!-- end title -->
+                <!-- content -->
+                <div class="row">
+                    <div class="col-sm-8 pr-sm-0 pl-sm-3 px-0 col-12">
+                        <div class="">
+                            <div class="thumb-img">
+                                <a href="#"><img class="" src="./images/2.png" width="760" height="430" alt="Vì sao túi nilon trắng bên trong có nước lại đuổi được ruồi?"></a>
+                                <div class="d-lg-block d-none">
+                                    <a href="#"><span class="play-button-main"><img src="./images/triangle.svg" alt=""></span></a>  
+                                </div>
+                                <div class="d-lg-none d-block">
+                                    <a href="#"><span class="play-button-mb"><i class="fas fa-caret-right"></i></span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 000 -->
+                    <div class="col-sm-4 pr-sm-3 col-12 pl-lg-4 pl-sm-3">
+                        <div class="fs-32 h1-robo text-white title-video title-text-box1">
+                            <a href="#" class="fix-text3 f-600">
+                                Việt Nam giành HC vàng SEA Games 30
+                            </a>
+                        </div>
+                        <div class="h1-ari fs-16 text-white pt-3 pb-sm-0 pb-3 des-text-box1">
+                            <a href="#" class="fix-text3 f-400">
+                                Đại biểu HĐND TP HCM sẽ chất vấn lãnh đạo Công an, Sở Tài nguyên - Môi trường về an ninh trật tự và môi trường, đất đai, ngày 9/12.
+                            </a>
+                        </div>
+                        <div class="view-time d-lg-block d-none">
+                            <span class="last-time">23 phút trước</span>
+                            <span class="total-view">83 Lượt xem</span>
+                        </div>
+                        <div class="icon-share">
+                            <a href="#"><span class="icon-link"><i class="fas fa-link fa-fw"></i></span></a>
+                            <a href="#"><span class="icon-bookmak"><i class="fas fa-bookmark fa-fw"></i></span></a>
+                            <a href="#"><span class="icon-facebook"><i class="fab fa-facebook-f fa-fw"></i></span></a>
+                            <a href="#"><span class="icon-twitter"><i class="fab fa-twitter fa-fw"></i></span></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- video thumb -->
+                <div class="video-thumb">
+                    <!-- video thumb1 -->
+                    <div class="video-thumb__1">
+                        <!-- image -->
+                        <div class="video-thumb__2">
+                            <div class="thumb-img">
+                                <a href="#"><img class="" src="./images/2.png" width="200" height="120" alt="Vì sao túi nilon trắng bên trong có nước lại đuổi được ruồi?"></a>
+                            </div>
+                        </div>
+                        <!-- end image -->
+                        <!-- text -->
+                        <div class="h1-robo fs-16 text-white pt-sm-3 pr-sm-3 des-text-box2">
+                            <a href="#" class="fix-text3 f-400">
+                                Bóng chuyền nữ Việt Nam và nỗi lo SEA Games 30
+                            </a>
+                        </div>
+                        <!-- end text -->
+                        <!-- icon -->
+                        <div class="pt-2 d-lg-block d-none">
+                            <span class="last-time">23 phút trước</span>
+                            <span class="last-comment">5</span>
+                        </div>
+                        <!-- end icon -->
+                    </div>
+                    <!-- end video thumb1 -->
+                    <!-- video thumb1 -->
+                    <div class="video-thumb__1">
+                        <!-- image -->
+                        <div class="video-thumb__2">
+                            <div class="thumb-img">
+                                <a href="#"><img class="" src="./images/2.png" width="200" height="120" alt="Vì sao túi nilon trắng bên trong có nước lại đuổi được ruồi?"></a>
+                            </div>
+                        </div>
+                        <!-- end image -->
+                        <!-- text -->
+                        <div class="h1-robo fs-16 text-white pt-sm-3 pr-sm-3 des-text-box2">
+                            <a href="#" class="fix-text3 f-400">
+                                Bóng chuyền nữ Việt Nam và nỗi lo SEA Games 30
+                            </a>
+                        </div>
+                        <!-- end text -->
+                        <!-- icon -->
+                        <div class="pt-2 d-lg-block d-none">
+                            <span class="last-time">23 phút trước</span>
+                            <span class="last-comment">5</span>
+                        </div>
+                        <!-- end icon -->
+                    </div>
+                    <!-- end video thumb1 -->
+                    <!-- video thumb1 -->
+                    <div class="video-thumb__1">
+                        <!-- image -->
+                        <div class="video-thumb__2">
+                            <div class="thumb-img">
+                                <a href="#"><img class="" src="./images/2.png" width="200" height="120" alt="Vì sao túi nilon trắng bên trong có nước lại đuổi được ruồi?"></a>
+                            </div>
+                        </div>
+                        <!-- end image -->
+                        <!-- text -->
+                        <div class="h1-robo fs-16 text-white pt-sm-3 pr-sm-3 des-text-box2">
+                            <a href="#" class="fix-text3 f-400">
+                                Bóng chuyền nữ Việt Nam và nỗi lo SEA Games 30
+                            </a>
+                        </div>
+                        <!-- end text -->
+                        <!-- icon -->
+                        <div class="pt-2 d-lg-block d-none">
+                            <span class="last-time">23 phút trước</span>
+                            <span class="last-comment">5</span>
+                        </div>
+                        <!-- end icon -->
+                    </div>
+                    <!-- end video thumb1 -->
+                    <!-- video thumb1 -->
+                    <div class="video-thumb__1">
+                        <!-- image -->
+                        <div class="video-thumb__2">
+                            <div class="thumb-img">
+                                <a href="#"><img class="" src="./images/2.png" width="200" height="120" alt="Vì sao túi nilon trắng bên trong có nước lại đuổi được ruồi?"></a>
+                            </div>
+                        </div>
+                        <!-- end image -->
+                        <!-- text -->
+                        <div class="h1-robo fs-16 text-white pt-sm-3 pr-sm-3 des-text-box2">
+                            <a href="#" class="fix-text3 f-400">
+                                Bóng chuyền nữ Việt Nam và nỗi lo SEA Games 30
+                            </a>
+                        </div>
+                        <!-- end text -->
+                        <!-- icon -->
+                        <div class="pt-2 d-lg-block d-none">
+                            <span class="last-time">23 phút trước</span>
+                            <span class="last-comment">5</span>
+                        </div>
+                        <!-- end icon -->
+                    </div>
+                    <!-- end video thumb1 -->
+                    <!-- video thumb1 -->
+                    <div class="video-thumb__1">
+                        <!-- image -->
+                        <div class="video-thumb__2">
+                            <div class="thumb-img">
+                                <a href="#"><img class="" src="./images/2.png" width="200" height="120" alt="Vì sao túi nilon trắng bên trong có nước lại đuổi được ruồi?"></a>
+                            </div>
+                        </div>
+                        <!-- end image -->
+                        <!-- text -->
+                        <div class="h1-robo fs-16 text-white pt-sm-3 pr-sm-3 des-text-box2">
+                            <a href="#" class="fix-text3 f-400">
+                                Bóng chuyền nữ Việt Nam và nỗi lo SEA Games 30
+                            </a>
+                        </div>
+                        <!-- end text -->
+                        <!-- icon -->
+                        <div class="pt-2 d-lg-block d-none">
+                            <span class="last-time">23 phút trước</span>
+                            <span class="last-comment">5</span>
+                        </div>
+                        <!-- end icon -->
+                    </div>
+                    <!-- end video thumb1 -->
+                </div>
+                <!-- end video thumb -->
+                <!-- end content -->
+            </div>
+        </div>
+        <!-- end box4 -->
+        <!-- box tin duoi video -->
+        <div class="d-sm-none d-block">
+            <div class="w-1140 main-content1 main-content-box3">
+                <!-- box1 -->
+                <div class="main-box1">
+                    <div class="main-box-left">
+                        <!-- hang1 -->
+                        <div class="article-news-item">
+                            <div class="col-sm-5 px-0 col-5">
+                                <div class="">
+                                    <div class="thumb-img">
+                                        <a href="#"><img class="" src="./images/2.png" width="330" height="180" alt="Vì sao túi nilon trắng bên trong có nước lại đuổi được ruồi?"></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-7 pr-0 col-7 pt-sm-0">
+                                <div class="fs-20 title-text-box3">
+                                    <a href="#" class="fix-text3 f-600">
+                                        Chất vấn Giám đốc Công an và Sở Tài nguyên - Môi trường TP HCM
+                                    </a>
+                                </div>
+                                <div class="h1-ari fs-13 pt-2">
+                                    <a href="#" class="f-600 text-gray">Thời sự</a>
+                                    <span>&nbsp;-&nbsp;</span>
+                                    <span class="text-gray">7h</span>
+                                </div>
+                                <div class="h1-ari fs-14 pt-lg-0 pt-1 d-lg-block d-none">
+                                    <a href="#" class="fix-text3 f-400">
+                                        Đại biểu HĐND TP HCM sẽ chất vấn lãnh đạo Công an, Sở Tài nguyên - Môi trường về an ninh trật tự và môi trường, đất đai, ngày 9/12.
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end hang1 -->
+                        <!-- hang1 -->
+                        <div class="article-news-item">
+                            <div class="col-sm-5 px-0 col-5">
+                                <div class="">
+                                    <div class="thumb-img">
+                                        <a href="#"><img class="" src="./images/2.png" width="330" height="180" alt="Vì sao túi nilon trắng bên trong có nước lại đuổi được ruồi?"></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-7 pr-0 col-7 pt-sm-0">
+                                <div class="fs-20 title-text-box3">
+                                    <a href="#" class="fix-text3 f-600">
+                                        Chất vấn Giám đốc Công an và Sở Tài nguyên - Môi trường TP HCM
+                                    </a>
+                                </div>
+                                <div class="h1-ari fs-13 pt-2">
+                                    <a href="#" class="f-600 text-gray">Thời sự</a>
+                                    <span>&nbsp;-&nbsp;</span>
+                                    <span class="text-gray">7h</span>
+                                </div>
+                                <div class="h1-ari fs-14 pt-lg-0 pt-1 d-lg-block d-none">
+                                    <a href="#" class="fix-text3 f-400">
+                                        Đại biểu HĐND TP HCM sẽ chất vấn lãnh đạo Công an, Sở Tài nguyên - Môi trường về an ninh trật tự và môi trường, đất đai, ngày 9/12.
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end hang1 -->
+                        <!-- hang1 -->
+                        <div class="article-news-item">
+                            <div class="col-sm-5 px-0 col-5">
+                                <div class="">
+                                    <div class="thumb-img">
+                                        <a href="#"><img class="" src="./images/2.png" width="330" height="180" alt="Vì sao túi nilon trắng bên trong có nước lại đuổi được ruồi?"></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-7 pr-0 col-7 pt-sm-0">
+                                <div class="fs-20 title-text-box3">
+                                    <a href="#" class="fix-text3 f-600">
+                                        Chất vấn Giám đốc Công an và Sở Tài nguyên - Môi trường TP HCM
+                                    </a>
+                                </div>
+                                <div class="h1-ari fs-13 pt-2">
+                                    <a href="#" class="f-600 text-gray">Thời sự</a>
+                                    <span>&nbsp;-&nbsp;</span>
+                                    <span class="text-gray">7h</span>
+                                </div>
+                                <div class="h1-ari fs-14 pt-lg-0 pt-1 d-lg-block d-none">
+                                    <a href="#" class="fix-text3 f-400">
+                                        Đại biểu HĐND TP HCM sẽ chất vấn lãnh đạo Công an, Sở Tài nguyên - Môi trường về an ninh trật tự và môi trường, đất đai, ngày 9/12.
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end hang1 -->
+                        <!-- hang1 -->
+                        <div class="article-news-item">
+                            <div class="col-sm-5 px-0 col-5">
+                                <div class="">
+                                    <div class="thumb-img">
+                                        <a href="#"><img class="" src="./images/2.png" width="330" height="180" alt="Vì sao túi nilon trắng bên trong có nước lại đuổi được ruồi?"></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-7 pr-0 col-7 pt-sm-0">
+                                <div class="fs-20 title-text-box3">
+                                    <a href="#" class="fix-text3 f-600">
+                                        Chất vấn Giám đốc Công an và Sở Tài nguyên - Môi trường TP HCM
+                                    </a>
+                                </div>
+                                <div class="h1-ari fs-13 pt-2">
+                                    <a href="#" class="f-600 text-gray">Thời sự</a>
+                                    <span>&nbsp;-&nbsp;</span>
+                                    <span class="text-gray">7h</span>
+                                </div>
+                                <div class="h1-ari fs-14 pt-lg-0 pt-1 d-lg-block d-none">
+                                    <a href="#" class="fix-text3 f-400">
+                                        Đại biểu HĐND TP HCM sẽ chất vấn lãnh đạo Công an, Sở Tài nguyên - Môi trường về an ninh trật tự và môi trường, đất đai, ngày 9/12.
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end hang1 -->
+                    </div>
+                    <div class="main-box1-right">
+                        <div class="main-box4-right">
+                            <div class="article-news-box4">
+                                <div class="news-box4-img">
+                                    <div class="">
+                                        <div class="thumb-img">
+                                            <a href="#"><img class="" src="./images/2.png" width="300" height="180" alt="Vì sao túi nilon trắng bên trong có nước lại đuổi được ruồi?"></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="fs-18 pt-sm-2 px-sm-0 pl-3 pr-0 title-text-box3">
+                                        <a href="#" class="f-600">
+                                            Nhiều đài truyền hình Hàn Quốc tới Nội Bài đón nhà vô địch SEA Games
+                                        </a>
+                                    </div>
+                                    <div class="h1-ari fs-13 pt-2 pb-lg-2 pl-lg-0 pl-3">
+                                        <a href="#" class="f-600 text-gray">Thời sự</a>
+                                        <span>&nbsp;-&nbsp;</span>
+                                        <span class="text-gray">7h</span>
+                                    </div>
+                                    <div class="h1-ari fs-14 px-sm-0 px-2 des-text-box1 d-lg-block d-none">
+                                        <a href="#" class="fix-text3 f-400">
+                                            Chiều 11/12, công tác chuẩn bị đã hoàn tất nhiều giờ trước khi đoàn bóng đá Việt Nam giành HCV SEA Games 30 về tới sân bay Nội Bài (Hà Nội).
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- hang1 -->
+                            <div class="article-news-item">
+                                <div class="col-sm-5 px-0 col-5">
+                                    <div class="">
+                                        <div class="thumb-img bo-6">
+                                            <a href="#"><img class="" src="./images/2.png" width="120" height="72" alt="Vì sao túi nilon trắng bên trong có nước lại đuổi được ruồi?"></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-7 pr-sm-0 px-2 col-7">
+                                    <div class="fs-14 title-text-box3">
+                                        <a href="#" class="fix-text3 f-600">
+                                            Vì sao túi nilon trắng bên trong có nước lại đuổi được ruồi?
+                                        </a>
+                                    </div>
+                                    <div class="h1-ari fs-13 pt-2">
+                                        <a href="#" class="f-600 text-gray">Thời sự</a>
+                                        <span>&nbsp;-&nbsp;</span>
+                                        <span class="text-gray">7h</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- end hang1 -->
+                            <!-- hang1 -->
+                            <div class="article-news-item">
+                                <div class="col-sm-5 px-0 col-5">
+                                    <div class="">
+                                        <div class="thumb-img bo-6">
+                                            <a href="#"><img class="" src="./images/2.png" width="120" height="72" alt="Vì sao túi nilon trắng bên trong có nước lại đuổi được ruồi?"></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-7 pr-sm-0 px-2 col-7">
+                                    <div class="fs-14 title-text-box3">
+                                        <a href="#" class="fix-text3 f-600">
+                                            Vì sao túi nilon trắng bên trong có nước lại đuổi được ruồi?
+                                        </a>
+                                    </div>
+                                    <div class="h1-ari fs-13 pt-2">
+                                        <a href="#" class="f-600 text-gray">Thời sự</a>
+                                        <span>&nbsp;-&nbsp;</span>
+                                        <span class="text-gray">7h</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- end hang1 -->
+                            <!-- hang1 -->
+                            <div class="article-news-item">
+                                <div class="col-sm-5 px-0 col-5">
+                                    <div class="">
+                                        <div class="thumb-img bo-6">
+                                            <a href="#"><img class="" src="./images/2.png" width="120" height="72" alt="Vì sao túi nilon trắng bên trong có nước lại đuổi được ruồi?"></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-7 pr-sm-0 px-2 col-7">
+                                    <div class="fs-14 title-text-box3">
+                                        <a href="#" class="fix-text3 f-600">
+                                            Vì sao túi nilon trắng bên trong có nước lại đuổi được ruồi?
+                                        </a>
+                                    </div>
+                                    <div class="h1-ari fs-13 pt-2">
+                                        <a href="#" class="f-600 text-gray">Thời sự</a>
+                                        <span>&nbsp;-&nbsp;</span>
+                                        <span class="text-gray">7h</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- end hang1 -->
+                            <!-- hang1 -->
+                            <div class="article-news-item">
+                                <div class="col-sm-5 px-0 col-5">
+                                    <div class="">
+                                        <div class="thumb-img bo-6">
+                                            <a href="#"><img class="" src="./images/2.png" width="120" height="72" alt="Vì sao túi nilon trắng bên trong có nước lại đuổi được ruồi?"></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-7 pr-sm-0 px-2 col-7">
+                                    <div class="fs-14 title-text-box3">
+                                        <a href="#" class="fix-text3 f-600">
+                                            Vì sao túi nilon trắng bên trong có nước lại đuổi được ruồi?
+                                        </a>
+                                    </div>
+                                    <div class="h1-ari fs-13 pt-2">
+                                        <a href="#" class="f-600 text-gray">Thời sự</a>
+                                        <span>&nbsp;-&nbsp;</span>
+                                        <span class="text-gray">7h</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- end hang1 -->
+                        </div>
+                    </div>
+                </div>
+                <!-- end box1 -->
+            </div>
+        </div>
+        <!-- end box tin duoi video -->
+        <!-- qc-mobile -->
+        <div class="qc-mobile">
+            <a href="#">
+                <img src="./images/qc2.png" alt="">
+            </a>
+        </div>
+        <!-- end qc-mobile -->
+        <!-- box5 -->
+        <div class="w-1140 d-lg-block d-none">
+            <div class="qc-home-center">
+                <a href="#">
+                    <img src="./images/qc4.png" alt="">
+                </a>
+            </div>
+        </div>
+        <!-- end box5 -->
+        <!-- tin doc nhieu -->
+        <div class="w-1140 d-sm-none d-block bg-pink px-3 py-3">
+            <div class="main-hot-news main-box6-news__title mb-3">
+                Đọc nhiều
+            </div>
+            <div class="video-thumb">
+                    <!-- news thumb1 -->
+                    <div class="news-thumb__1">
+                        <!-- image -->
+                        <div class="news-thumb__2">
+                            <div class="thumb-img">
+                                <a href="#"><img class="" src="./images/2.png" width="200" height="120" alt="Vì sao túi nilon trắng bên trong có nước lại đuổi được ruồi?"></a>
+                            </div>
+                        </div>
+                        <!-- end image -->
+                        <!-- text -->
+                        <div>
+                            <div class="fs-16 pt-sm-2 pr-sm-3 des-text-box2">
+                                <a href="#" class="fix-text3 f-600">
+                                    Bóng chuyền nữ Việt Nam và nỗi lo SEA Games 30
+                                </a>
+                            </div>
+                            <div class="h1-ari fs-13 pt-2 pb-2">
+                                <a href="#" class="f-600 text-gray">Thời sự</a>
+                                <span>&nbsp;-&nbsp;</span>
+                                <span class="text-gray">7h</span>
+                            </div>
+                        </div>
+                        <!-- end text -->
+                    </div>
+                    <!-- end news thumb1 -->
+                    <!-- news thumb1 -->
+                    <div class="news-thumb__1">
+                        <!-- image -->
+                        <div class="news-thumb__2">
+                            <div class="thumb-img">
+                                <a href="#"><img class="" src="./images/2.png" width="200" height="120" alt="Vì sao túi nilon trắng bên trong có nước lại đuổi được ruồi?"></a>
+                            </div>
+                        </div>
+                        <!-- end image -->
+                        <!-- text -->
+                        <div>
+                            <div class="fs-16 pt-sm-2 pr-sm-3 des-text-box2">
+                                <a href="#" class="fix-text3 f-600">
+                                    Bóng chuyền nữ Việt Nam và nỗi lo SEA Games 30
+                                </a>
+                            </div>
+                            <div class="h1-ari fs-13 pt-2 pb-2">
+                                <a href="#" class="f-600 text-gray">Thời sự</a>
+                                <span>&nbsp;-&nbsp;</span>
+                                <span class="text-gray">7h</span>
+                            </div>
+                        </div>
+                        <!-- end text -->
+                    </div>
+                    <!-- end news thumb1 -->
+                    <!-- news thumb1 -->
+                    <div class="news-thumb__1">
+                        <!-- image -->
+                        <div class="news-thumb__2">
+                            <div class="thumb-img">
+                                <a href="#"><img class="" src="./images/2.png" width="200" height="120" alt="Vì sao túi nilon trắng bên trong có nước lại đuổi được ruồi?"></a>
+                            </div>
+                        </div>
+                        <!-- end image -->
+                        <!-- text -->
+                        <div>
+                            <div class="fs-16 pt-sm-2 pr-sm-3 des-text-box2">
+                                <a href="#" class="fix-text3 f-600">
+                                    Bóng chuyền nữ Việt Nam và nỗi lo SEA Games 30
+                                </a>
+                            </div>
+                            <div class="h1-ari fs-13 pt-2 pb-2">
+                                <a href="#" class="f-600 text-gray">Thời sự</a>
+                                <span>&nbsp;-&nbsp;</span>
+                                <span class="text-gray">7h</span>
+                            </div>
+                        </div>
+                        <!-- end text -->
+                    </div>
+                    <!-- end news thumb1 -->
+                    <!-- news thumb1 -->
+                    <div class="news-thumb__1">
+                        <!-- image -->
+                        <div class="news-thumb__2">
+                            <div class="thumb-img">
+                                <a href="#"><img class="" src="./images/2.png" width="200" height="120" alt="Vì sao túi nilon trắng bên trong có nước lại đuổi được ruồi?"></a>
+                            </div>
+                        </div>
+                        <!-- end image -->
+                        <!-- text -->
+                        <div>
+                            <div class="fs-16 pt-sm-2 pr-sm-3 des-text-box2">
+                                <a href="#" class="fix-text3 f-600">
+                                    Bóng chuyền nữ Việt Nam và nỗi lo SEA Games 30
+                                </a>
+                            </div>
+                            <div class="h1-ari fs-13 pt-2 pb-2">
+                                <a href="#" class="f-600 text-gray">Thời sự</a>
+                                <span>&nbsp;-&nbsp;</span>
+                                <span class="text-gray">7h</span>
+                            </div>
+                        </div>
+                        <!-- end text -->
+                    </div>
+                    <!-- end news thumb1 -->
+                    <!-- news thumb1 -->
+                    <div class="news-thumb__1">
+                        <!-- image -->
+                        <div class="news-thumb__2">
+                            <div class="thumb-img">
+                                <a href="#"><img class="" src="./images/2.png" width="200" height="120" alt="Vì sao túi nilon trắng bên trong có nước lại đuổi được ruồi?"></a>
+                            </div>
+                        </div>
+                        <!-- end image -->
+                        <!-- text -->
+                        <div>
+                            <div class="fs-16 pt-sm-2 pr-sm-3 des-text-box2">
+                                <a href="#" class="fix-text3 f-600">
+                                    Bóng chuyền nữ Việt Nam và nỗi lo SEA Games 30
+                                </a>
+                            </div>
+                            <div class="h1-ari fs-13 pt-2 pb-2">
+                                <a href="#" class="f-600 text-gray">Thời sự</a>
+                                <span>&nbsp;-&nbsp;</span>
+                                <span class="text-gray">7h</span>
+                            </div>
+                        </div>
+                        <!-- end text -->
+                    </div>
+                    <!-- end news thumb1 -->
+                </div>
+        </div>
+        <!-- end tin doc nhieu -->
+        <!-- qc-mobile -->
+        <div class="qc-mobile">
+            <a href="#">
+                <img src="./images/qc2.png" alt="">
+            </a>
+        </div>
+        <!-- end qc-mobile -->
+        <!-- box6 -->
+        <div class="w-1140 main-content1 pb-lg-0">
+            <div class="main-box6-news">
+                <!-- title -->
+                <div class="title-box-list gap-t">
+                    <a href="#" class="main-box6-news__title">văn hóa doanh nhân</a>
+                    <div class="title-box-scroll d-sm-block d-none">
+                        <a href="#" class="title-box__item">Chân dung</a>
+                        <a href="#" class="title-box__item">Thể thao</a>
+                        <a href="#" class="title-box__item">Giải trí</a>
+                    </div>
+                </div>
+                <!-- end title -->
+                <div class="main-news-box6">
+                    <div class="col-lg-4 col-12 pl-lg-0 px-0">
+                        <div class="article-news-box6">
+                            <div class="">
+                                <div class="">
+                                    <div class="thumb-img">
+                                        <a href="#"><img class="" src="./images/2.png" width="345" height="204" alt="Vì sao túi nilon trắng bên trong có nước lại đuổi được ruồi?"></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="fs-20 pt-sm-2 px-sm-0 px-2 title-text-box1">
+                                <a href="#" class="f-600">
+                                    Nhiều đài truyền hình Hàn Quốc tới Nội Bài đón nhà vô địch SEA Games
+                                </a>
+                            </div>
+                            <div class="h1-ari fs-13 pt-2 pb-sm-2 pb-3 pl-sm-0 pl-2 ">
+                                <span class="text-gray">15/11/2021</span>
+                            </div>
+                            <div class="h1-ari fs-14 px-sm-0 px-2  des-text-box1 d-lg-block d-none">
+                                <a href="#" class="fix-text3 f-400">
+                                    Chiều 11/12, công tác chuẩn bị đã hoàn tất nhiều giờ trước khi đoàn bóng đá Việt Nam giành HCV SEA Games 30 về tới sân bay Nội Bài (Hà Nội).
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-12 pr-lg-0 px-0">
+                        <!-- hang1 -->
+                        <div class="article-news-item__box6">
+                            <div class="col-sm-5 px-0 col-5">
+                                <div class="">
+                                    <div class="thumb-img bo-6">
+                                        <a href="#"><img class="" src="./images/2.png" width="143" height="90" alt="Vì sao túi nilon trắng bên trong có nước lại đuổi được ruồi?"></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-7 pl-lg-3 col-7 pr-lg-0 pr-0">
+                                <div class="fs-14 title-text-box6">
+                                    <a href="#" class="fix-text3 f-600">
+                                        Vì sao túi nilon trắng bên trong có nước lại đuổi được ruồi?
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end hang1 -->
+                        <!-- hang1 -->
+                        <div class="article-news-item__box6">
+                            <div class="col-sm-5 px-0 col-5">
+                                <div class="">
+                                    <div class="thumb-img bo-6">
+                                        <a href="#"><img class="" src="./images/2.png" width="143" height="90" alt="Vì sao túi nilon trắng bên trong có nước lại đuổi được ruồi?"></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-7 pl-lg-3 col-7 pr-lg-0 pr-0">
+                                <div class="fs-14 title-text-box6">
+                                    <a href="#" class="fix-text3 f-600">
+                                        Vì sao túi nilon trắng bên trong có nước lại đuổi được ruồi?
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end hang1 -->
+                        <!-- hang1 -->
+                        <div class="article-news-item__box6">
+                            <div class="col-sm-5 px-0 col-5">
+                                <div class="">
+                                    <div class="thumb-img bo-6">
+                                        <a href="#"><img class="" src="./images/2.png" width="143" height="90" alt="Vì sao túi nilon trắng bên trong có nước lại đuổi được ruồi?"></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-7 pl-lg-3 col-7 pr-lg-0 pr-0">
+                                <div class="fs-14 title-text-box6">
+                                    <a href="#" class="fix-text3 f-600">
+                                        Vì sao túi nilon trắng bên trong có nước lại đuổi được ruồi?
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end hang1 -->
+                    </div>
+                     <div class="col-lg-4 col-12 pr-lg-0 px-0">
+                        <!-- hang1 -->
+                        <div class="article-news-item__box6">
+                            <div class="col-sm-5 px-0 col-5">
+                                <div class="">
+                                    <div class="thumb-img bo-6">
+                                        <a href="#"><img class="" src="./images/2.png" width="143" height="90" alt="Vì sao túi nilon trắng bên trong có nước lại đuổi được ruồi?"></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-7 pl-lg-3 col-7 pr-lg-0 pr-0">
+                                <div class="fs-14 title-text-box6">
+                                    <a href="#" class="fix-text3 f-600">
+                                        Vì sao túi nilon trắng bên trong có nước lại đuổi được ruồi?
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end hang1 -->
+                        <!-- hang1 -->
+                        <div class="article-news-item__box6">
+                            <div class="col-sm-5 px-0 col-5">
+                                <div class="">
+                                    <div class="thumb-img bo-6">
+                                        <a href="#"><img class="" src="./images/2.png" width="143" height="90" alt="Vì sao túi nilon trắng bên trong có nước lại đuổi được ruồi?"></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-7 pl-lg-3 col-7 pr-lg-0 pr-0">
+                                <div class="fs-14 title-text-box6">
+                                    <a href="#" class="fix-text3 f-600">
+                                        Vì sao túi nilon trắng bên trong có nước lại đuổi được ruồi?
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end hang1 -->
+                        <!-- hang1 -->
+                        <div class="article-news-item__box6">
+                            <div class="col-sm-5 px-0 col-5">
+                                <div class="">
+                                    <div class="thumb-img bo-6">
+                                        <a href="#"><img class="" src="./images/2.png" width="143" height="90" alt="Vì sao túi nilon trắng bên trong có nước lại đuổi được ruồi?"></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-7 pl-lg-3 col-7 pr-lg-0 pr-0">
+                                <div class="fs-14 title-text-box6">
+                                    <a href="#" class="fix-text3 f-600">
+                                        Vì sao túi nilon trắng bên trong có nước lại đuổi được ruồi?
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end hang1 -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end box6 -->
+        <!-- box9 -->
+        <div class="w-1140 main-content1 pb-lg-0 pt-4">
+            <div class="gap-box9">
+                <!-- cot 1 -->
+                <div class="col-sm-4 col-12 pl-lg-0 pb-lg-3 pr-lg-3 pr-sm-3 px-0">
+                    <div class="main-box6-news__title">Thời sự</div>
+                    <div class="col-sm-12 px-0 col-12 mb-3 mt-4 main-content-box9">
+                        <div class="">
+                            <div class="thumb-img">
+                                <a href="#"><img class="" src="./images/2.png" width="345" height="204" alt="Vì sao túi nilon trắng bên trong có nước lại đuổi được ruồi?"></a>
+                            </div>
+                        </div>
+                        <div class="fs-18 pt-3">
+                            <a href="#" class="fix-text3 f-600 title-text-box1 px-sm-0 px-2">
+	                            Ông Hoàng Trung Hải vi phạm 'đến mức phải xem xét kỷ luật'
+	                        </a>
+                        </div>
+                        <div class="h1-robo fs-14 pt-2 pb-sm-0 pl-sm-0 pl-2 pb-3">
+                            <span class="text-gray">15/9/2021</span>
+                        </div>
+                        <div class="h1-ari fs-14 pt-2 des-text-box1 px-sm-0 px-0 d-lg-block d-none">
+                            <a href="#" class="fix-text3 f-400">
+	                            HLV Park Hang-seo dành nhiều thời gian chỉ dẫn thêm cho các hậu vệ cách kèm người, trong buổi tập sáng 29/11.
+	                        </a>
+                        </div>
+                    </div>
+                    <div class="article-news-item__box9">
+                        <div class="col-lg-5 col-sm-12 px-sm-0 pr-0 col-5 pl-0">
+                            <div class="">
+                                <div class="thumb-img">
+                                    <a href="#"><img class="" src="./images/2.png" width="143" height="90" alt="Vì sao túi nilon trắng bên trong có nước lại đuổi được ruồi?"></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-7 col-sm-12 col-7 pr-lg-0 pl-lg-3 pl-sm-0 pl-3 pr-0 pt-lg-0 pt-sm-2">
+                            <div class="h1-robo fs-14 des-text-box2">
+                                <a href="#" class="fix-text3 f-600">
+                                    Vì sao túi nilon trắng ab bên trong có nước lại đuổi được ruồi?
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="article-news-item__box9">
+                        <div class="col-lg-5 col-sm-12 px-sm-0 pr-0 col-5 pl-0">
+                            <div class="">
+                                <div class="thumb-img">
+                                    <a href="#"><img class="" src="./images/2.png" width="143" height="90" alt="Vì sao túi nilon trắng bên trong có nước lại đuổi được ruồi?"></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-7 col-sm-12 col-7 pr-lg-0 pl-lg-3 pl-sm-0 pl-3 pr-0 pt-lg-0 pt-sm-2">
+                            <div class="h1-robo fs-14 des-text-box2">
+                                <a href="#" class="fix-text3 f-600">
+                                    Vì sao túi nilon trắng ab bên trong có nước lại đuổi được ruồi?
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- end cot 1 -->
+                <div class="col-11 line2 d-sm-none d-block"></div>
+                <!-- cot 1 -->
+                <!-- cot 2 -->
+                <div class="col-sm-4 col-12 pl-lg-0 pb-lg-3 pr-lg-3 pr-sm-3 px-0">
+                    <div class="main-box6-news__title">Thời sự</div>
+                    <div class="col-sm-12 px-0 col-12 mb-3 mt-4 main-content-box9">
+                        <div class="">
+                            <div class="thumb-img">
+                                <a href="#"><img class="" src="./images/2.png" width="345" height="204" alt="Vì sao túi nilon trắng bên trong có nước lại đuổi được ruồi?"></a>
+                            </div>
+                        </div>
+                        <div class="fs-18 pt-3">
+                            <a href="#" class="fix-text3 f-600 title-text-box1 px-sm-0 px-2">
+                                Ông Hoàng Trung Hải vi phạm 'đến mức phải xem xét kỷ luật'
+                            </a>
+                        </div>
+                        <div class="h1-robo fs-14 pt-2 pb-sm-0 pl-sm-0 pl-2 pb-3">
+                            <span class="text-gray">15/9/2021</span>
+                        </div>
+                        <div class="h1-ari fs-14 pt-2 des-text-box1 px-sm-0 px-0 d-lg-block d-none">
+                            <a href="#" class="fix-text3 f-400">
+                                HLV Park Hang-seo dành nhiều thời gian chỉ dẫn thêm cho các hậu vệ cách kèm người, trong buổi tập sáng 29/11.
+                            </a>
+                        </div>
+                    </div>
+                    <div class="article-news-item__box9">
+                        <div class="col-lg-5 col-sm-12 px-sm-0 pr-0 col-5 pl-0">
+                            <div class="">
+                                <div class="thumb-img">
+                                    <a href="#"><img class="" src="./images/2.png" width="143" height="90" alt="Vì sao túi nilon trắng bên trong có nước lại đuổi được ruồi?"></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-7 col-sm-12 col-7 pr-lg-0 pl-lg-3 pl-sm-0 pl-3 pr-0 pt-lg-0 pt-sm-2">
+                            <div class="h1-robo fs-14 des-text-box2">
+                                <a href="#" class="fix-text3 f-600">
+                                    Vì sao túi nilon trắng ab bên trong có nước lại đuổi được ruồi?
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="article-news-item__box9">
+                        <div class="col-lg-5 col-sm-12 px-sm-0 pr-0 col-5 pl-0">
+                            <div class="">
+                                <div class="thumb-img">
+                                    <a href="#"><img class="" src="./images/2.png" width="143" height="90" alt="Vì sao túi nilon trắng bên trong có nước lại đuổi được ruồi?"></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-7 col-sm-12 col-7 pr-lg-0 pl-lg-3 pl-sm-0 pl-3 pr-0 pt-lg-0 pt-sm-2">
+                            <div class="h1-robo fs-14 des-text-box2">
+                                <a href="#" class="fix-text3 f-600">
+                                    Vì sao túi nilon trắng ab bên trong có nước lại đuổi được ruồi?
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- end cot 2 -->
+                <div class="col-11 line2 d-sm-none d-block"></div>
+                <!-- cot 3 -->
+                <div class="col-sm-4 col-12 pl-lg-0 pb-lg-3 pr-lg-3 pr-sm-3 px-0">
+                    <div class="main-box6-news__title">Thời sự</div>
+                    <div class="col-sm-12 px-0 col-12 mb-3 mt-4 main-content-box9">
+                        <div class="">
+                            <div class="thumb-img">
+                                <a href="#"><img class="" src="./images/2.png" width="345" height="204" alt="Vì sao túi nilon trắng bên trong có nước lại đuổi được ruồi?"></a>
+                            </div>
+                        </div>
+                        <div class="fs-18 pt-3">
+                            <a href="#" class="fix-text3 f-600 title-text-box1 px-sm-0 px-2">
+                                Ông Hoàng Trung Hải vi phạm 'đến mức phải xem xét kỷ luật'
+                            </a>
+                        </div>
+                        <div class="h1-robo fs-14 pt-2 pb-sm-0 pl-sm-0 pl-2 pb-3">
+                            <span class="text-gray">15/9/2021</span>
+                        </div>
+                        <div class="h1-ari fs-14 pt-2 des-text-box1 px-sm-0 px-0 d-lg-block d-none">
+                            <a href="#" class="fix-text3 f-400">
+                                HLV Park Hang-seo dành nhiều thời gian chỉ dẫn thêm cho các hậu vệ cách kèm người, trong buổi tập sáng 29/11.
+                            </a>
+                        </div>
+                    </div>
+                    <div class="article-news-item__box9">
+                        <div class="col-lg-5 col-sm-12 px-sm-0 pr-0 col-5 pl-0">
+                            <div class="">
+                                <div class="thumb-img">
+                                    <a href="#"><img class="" src="./images/2.png" width="143" height="90" alt="Vì sao túi nilon trắng bên trong có nước lại đuổi được ruồi?"></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-7 col-sm-12 col-7 pr-lg-0 pl-lg-3 pl-sm-0 pl-3 pr-0 pt-lg-0 pt-sm-2">
+                            <div class="h1-robo fs-14 des-text-box2">
+                                <a href="#" class="fix-text3 f-600">
+                                    Vì sao túi nilon trắng ab bên trong có nước lại đuổi được ruồi?
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="article-news-item__box9">
+                        <div class="col-lg-5 col-sm-12 px-sm-0 pr-0 col-5 pl-0">
+                            <div class="">
+                                <div class="thumb-img">
+                                    <a href="#"><img class="" src="./images/2.png" width="143" height="90" alt="Vì sao túi nilon trắng bên trong có nước lại đuổi được ruồi?"></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-7 col-sm-12 col-7 pr-lg-0 pl-lg-3 pl-sm-0 pl-3 pr-0 pt-lg-0 pt-sm-2">
+                            <div class="h1-robo fs-14 des-text-box2">
+                                <a href="#" class="fix-text3 f-600">
+                                    Vì sao túi nilon trắng ab bên trong có nước lại đuổi được ruồi?
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- end cot 3 -->
+            </div>
+        </div>
+        <!-- end box9 -->
+        <!-- box10 -->
+        <div class="w-1140">
+            <div class="qc-home-center">
+                <a href="#">
+                    <img src="./images/qc4.png" alt="">
+                </a>
+            </div>
+        </div>
+        <!-- end box10 -->
+    </article>
+    <!-- end main -->
+    <!-- footer -->
+    <article>
+        <div class="footer">
+            <div class="padding-15">
+                <div class="w-1140 top-footer">
+                    <div class="logo-home">
+                        <a href="#"><img src="./images/logo.png" alt=""></a>
+                    </div>
+                </div>
+                <div class="w-1140 footer-main__info">
+                    <div class="footer-main__left">
+                        <div class="fs-14"><strong class="text-blue">Liên hiệp các Hội Khoa học và Kỹ thuật Việt Nam</strong></div>
+                        <div><strong class="text-red">Tạp chí Doanh nhân</strong><strong class="text-blue"> và Pháp lý</strong></div>
+                        <div class="fs-12">Cơ quan của Viện Hỗ trợ pháp lý và bảo vệ môi trường</div>
+                        <div class="fs-12">Tổng Biên tập:<strong>VŨ TUẤN ANH</strong> </div>
+                        <div class="fs-12">Giấy phép hoạt động báo chí điện tử số <strong>18/GP-BTTTT</strong> cấp ngày <strong>08/01/2021</strong></div>
+                    </div>
+                    <div class="footer-main__right">
+                        <div class="fs-12">Tòa soạn: Tầng 3, Cung trí thức Thành phố, Số 1, Tôn Thất Thuyết,</div>
+                        <div class="fs-12">Phường Dịch Vọng Hậu, Quận Cầu Giấy, Hà Nội</div>
+                        <div class="fs-12">Hotline: <strong>024.3728.1575</strong> | Email: <strong>toasoan@doanhnhanphaply.vn</strong></div>
+                    </div>
+                </div>
+                <div class="main-footer__list">
+                    <div class="w-1140  main-footer fs-14 f-600">
+                        <a href="#">Thời sự</a>
+                        <a href="#">Ngẫm</a>
+                        <a href="#">Dân tộc</a>
+                        <a href="#">54 sắc màu</a>
+                        <a href="#">Đường xanh</a>
+                        <a href="#">Gia đình</a>
+                        <a href="#">sống</a>
+                        <a href="#">Giải trí</a>
+                        <a href="#">Media</a>
+                        <a href="#">Kinh tế</a>
+                    </div>
+                </div>
+                <div class="footer-footer">
+                    <span class="fs-12 h1-ari">Copyright © All rights reserved. Tạp chí Doanh nhân và Pháp lý</span>
+                </div>
+            </div>
+        </div>
+    </article>
+    <!-- end footer -->
+    <!-- scrollTop -->
+    <a href="javascript:void(0)" class="scrollTop">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+    <!-- end scrollTop -->
+    <!-- JavaScript Bundle with Popper -->
+    <!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
